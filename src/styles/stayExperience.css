@@ -1,0 +1,140 @@
+/* .toptab-container{
+    height:50px;
+    display: flex;
+    background-color:none;
+    color: black;
+    padding: 20px 0;
+
+}
+
+.main{
+    display: flex;
+}
+
+.sub-header{
+    display: flex;
+    
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+    border-radius: 50px;
+    max-width: 70%;
+    margin: 15px 200px 15px 300px;
+    padding: 5px;
+    font-size: 20px;
+}
+.h-sections{
+ padding:0;
+ position: relative;
+ display: grid;
+
+} 
+
+.h-section input{
+    border: none;
+    outline:none;
+    background: transparent;
+    width: 100%;
+}
+
+.h-section:first-child {
+    flex: 2; 
+  }
+  
+.h-section:not(:first-child) {
+    flex: 1; 
+}
+
+.h-section:not(:last-child) {
+    border-right: 1px solid #ddd; 
+    padding-right: 20px;
+    margin-right: 20px;
+}
+.h-section:hover{
+    border: 1px solid #AEAEAE;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #AEAEAE;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+} */
+
+.tab-container{
+    background-color: none;
+    color: black;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.tab-container ul li{
+    list-style: none;
+}
+
+.se-tab-menu{
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+}
+
+
+
+.tab-contents{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    /* justify-content: space-between; */
+    gap:100px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 80px;
+    position: relative;
+   
+}
+
+
+
+.tabContentDetails {
+    display: flex;
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+.items-sections{
+
+ display: grid;
+
+} 
+
+.items-sections input{
+    border: none;
+    outline:none;
+    background: transparent;
+    width: 100%;
+}
+
+.tabContentDetails:first-child {
+    flex: 2; /* "Where" section gets more space */
+  }
+  
+  .tabContentDetails:not(:first-child) {
+    flex: 1; /* Other sections share equal space */
+  }
+
+.items-sections:not(:last-child) {
+    border-right: 1px solid #ddd; /* Adds a vertical line */
+    padding-right: 20px;
+    margin-right: 20px;
+
+  }
+.tabContentDetails:hover{
+    border: 1px solid #AEAEAE;
+    border-radius: 80px;
+    background-color: #AEAEAE;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    width: 100%;
+   
+}

@@ -1,0 +1,80 @@
+.getaway-container{
+    background-color: #F7F7F7;
+    color: black;
+    padding: 20px 0;
+}
+
+.getaway-section {
+   width: 70%;
+   margin: 0 auto;
+   background-color: #F7F7F7
+}
+
+#getaway-h {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.tab-menu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.tab-item.active {
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.location-item {
+    background-color: none;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.location-item:hover {
+    transform: scale(1.05);
+}
+
+.location-item h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.location-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: gray;
+}
+
+@media (max-width: 768px) {
+    .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+}
