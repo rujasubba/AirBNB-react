@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10px;
+  gap: 2px;
 }
 
 .main-container{
@@ -18,7 +18,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: 20px;
+    margin: 50px;
   }
   
   .image-wrapper {
@@ -60,6 +60,21 @@
   
   .next-btn {
     right: 0;
+  }
+
+  #card-share{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border: 1px solid white;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.7;
+  }
+
+  #card-share:hover{
+    opacity: 1;
   }
   
   .card-details {

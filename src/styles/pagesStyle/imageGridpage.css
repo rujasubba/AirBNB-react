@@ -1,19 +1,128 @@
 /* imageGridPage.css */
 
 .image-grid-page {
-    padding: 20px;
+    margin: 20px;
+    padding: 0;
   }
-  
+  .grid-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    position: relative;
   }
   
-  .grid-item img {
+  .grid-item:first-child {
+    grid-column: 1 / span 2; /* The first image will span two columns */
+    grid-row: 1 / span 2; /* The first image will span two rows */
+    position: relative;
+  }
+
+  .grid-item:nth-child(n+2) {
+    grid-column: auto;
+  }
+  
+  .grid-item img{
+    height: 100%;
     width: 100%;
-    height: auto;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
   }
+
+
+  #show-more{
+    width: 250px;
+    height:50px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+   
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 30%;
+    right: 5%;
+  }
+
+  .property-info{
+    display: block;
+    margin-top: 100px;
+    line-height: 15px;
+  }
+
+  .property-info h2{
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .property-info span{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+
+ .ratings{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: 900;
+ }
+
+ .ratings span{
+  font-size: 30px;
+  font-weight: 800;
+
+ }
+
+ .ratings :last-child{
+  text-decoration: underline;
+ }
   
+
+  .lower-section{
+    width: 70%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .availability{
+    border: 1px;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+    align-items: center;
+    border-radius: 20px;
+    padding: 100px;
+  }
+
+  .availability h3{
+    color:black;
+    text-align: center;
+    
+  }
+
+  .availability button {
+    background-color:#B0B0B0;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #B0B0B0;
+    border-radius: 10px;
+    color: white;
+    
+    font-size: 20px;
+    text-align: center;
+
+  }

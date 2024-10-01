@@ -18,6 +18,7 @@ import BlurOffSharpIcon from '@mui/icons-material/BlurOffSharp';
 function HeroSection(){
     return(
         <React.Fragment>
+          <div className="hero-container"> 
             <div className="hero-icons">
                 <div className="icon">
                   <LocalActivityOutlinedIcon />
@@ -81,13 +82,13 @@ function HeroSection(){
                 </div>
             </div>
 
-            <div className="banner">
+            {/* <div className="banner">
                 <div className="banner-info">
                     <h1>Discover the best rental properties anywher in the world</h1>
                     <h5>You are One Click away</h5>
                     <Button>Explore NearBy</Button>
                 </div>
-            </div>
+            </div> */}
 
             <div className="hero-images">
                     <div className="h-images">
@@ -133,7 +134,7 @@ function HeroSection(){
 
             <div className="lastSection">
                  <h1 id="ls-h">Past Experiences</h1>
-                <div className="ls-details">    
+                {/* <div className="ls-all">    
                 <div>
                     <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEzMTA4NjI3OTI1MjIxNDQyOA%3D%3D/original/bc989f2d-eca8-4bcf-a9b0-b70b8e685a64.jpeg?im_w=1440&im_q=highq" alt="" />
                     <h3>Live like Bollywood star Janhvi Kapoor</h3>
@@ -230,14 +231,14 @@ function HeroSection(){
                     <h3>The Last Blockbuster</h3>
                       <p>Hosted by Sandi</p>
                       <h3>Sold out</h3>
-                </div>
-             </div>  
+                </div> */}
+              
             </div>
 
-            {/* <Gallery /> */}
+           
 
 
-            
+        </div>     
 
         </React.Fragment>
         

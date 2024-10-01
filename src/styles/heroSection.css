@@ -1,5 +1,4 @@
-.banner{
-    /* background-image: url("https://www.investplusaccounting.com.au/wp-content/uploads/2024/04/Renting-out-on-Air-BnB-980x655.jpg"); */
+/* .banner{
     background-image: url("https://i.insider.com/63d3ef6ffc18470019550fec?width=700");
     height: 716px;
     position: relative;
@@ -35,19 +34,35 @@
     font-weight: 500;
     text-transform: uppercase;
     margin-top: 30px;
-  }
+  } */
+
+
+   .hero-container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 100px;
+
+   }
 
   .hero-icons{
     display: flex;
     justify-content: space-between;
     align-items:center;
-    margin: 20px 200px;
+    margin: 20px;
+    
+  }
+
+  .icon:hover{
+    opacity: 1;
   }
 
   .icon{
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0.5;
+
   }
 
   .icon p{
@@ -65,12 +80,15 @@
   .hero-images{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
-    margin-top: 20px;
+   
+    
+    
   }
   .hero-images img{
-    height:320px;
-    width: 400px;
+    height:230px;
+    width: 300px;
     border: 1px solid;
     border-radius: 15px;
   }
@@ -79,17 +97,19 @@
   display: grid;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 #ls-h{
-  /* margin-left: 300px; */
-  font-size: 50px;
+  
+  font-size: 30px;
 }
-.ls-details{
+.ls-all{
     display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(6, 400px);
+    justify-content:center;
+    grid-template-columns: repeat(6, 300px);
     grid-gap: 20px;
+    margin: 30px;
     
     
   }

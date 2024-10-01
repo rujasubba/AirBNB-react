@@ -1,13 +1,23 @@
 import React, { useState } from 'react';
-// import ImageGridModal from './imageGridModal';
+
 import { useNavigate } from 'react-router-dom';
+
+import ImageGridModal from './imageGridModal';
+import ImageGridPage from '../../pages/imageGridPage';
+import Gallery from './index';
+
 import '../../styles/imageCarousel.css';
 
-const ImageCarousel = ({ images, title, host, status }) => {
+import IosShareIcon from '@mui/icons-material/IosShare';
+
+
+const ImageCarousel = ({ images, title, host, status, place, guests, bedroom, bath, bed, star, reviews }) => {
     console.log(images);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const navigate = useNavigate();
+
+  const [imageDisplay, setImageDisplay] = useState(0);
 
   // const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -16,12 +26,19 @@ const ImageCarousel = ({ images, title, host, status }) => {
   }
 
 
-  const prevImage = () => {
+  const prevImage = (e) => {
+    
     setCurrentIndex(currentIndex > 0 ? currentIndex - 1 : images.length - 1);
+    e.stopPropagation();
+    
   };
 
-  const nextImage = () => {
+  const nextImage = (e) => {
+    
     setCurrentIndex(currentIndex < images.length - 1 ? currentIndex + 1 : 0);
+    e.stopPropagation();
+
+
   };
 
   // const openModal =() => {
@@ -31,8 +48,10 @@ const ImageCarousel = ({ images, title, host, status }) => {
   // const closeModal =() => {
   //   setIsModalOpen(false);
 
-    const handelCardClick = () =>{
-      navigate('/displayimages', {state:{images, title}});
+    const handelCardClick = (e) =>{
+      
+      navigate('/displayimages', {state:{images, title, host, status, place, guests, bedroom, bath, bed, star, reviews}});
+      e.stopPropagation();
     };
 
   return (
@@ -48,6 +67,7 @@ const ImageCarousel = ({ images, title, host, status }) => {
                 
               </div>
            <button className="next-btn" onClick={nextImage}>⟩</button>
+           <span id='card-share'><IosShareIcon /></span>
            <div className="card-details">
              <h3>{title}</h3>
              <p>Hosted by {host}</p>
@@ -55,9 +75,7 @@ const ImageCarousel = ({ images, title, host, status }) => {
             </div>                  
           </div>
 
-          {/* {isModalOpen &&(
-            <ImageGridModal images={images} title={title} onClose={closeModal} />
-          )} */}
+         
     </div>
   );
 };
