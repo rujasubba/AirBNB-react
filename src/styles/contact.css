@@ -1,0 +1,145 @@
+.container {
+   
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    
+   
+}
+.container h2{
+    margin-left: 30px;
+
+}
+.main-contact{
+    margin: 20px 300px;
+}
+.request-to-pay{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.left-column{
+    width: 50%;
+}
+.info-upper{
+    align-items: center;
+    justify-content: center;
+    margin-right: 191px;
+    margin-left: 191px;
+}
+
+.info-upper h1{
+        width: 375px;
+        margin: 20px 532px;
+    }
+
+ .info-upper p{
+        color: #9F9F9F;
+        width: 644px;
+        margin: 4px 398px 20px 398px;
+}
+
+
+.info-lower{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+.info-item {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.info-item span{
+    float: left;
+}
+
+.info-item h2 {
+    font-size: 18px;
+    margin-left: 40px;
+    
+}
+
+.info-item p {
+    font-size: 14px;
+    color: #666;
+    margin-left: 40px;
+    
+}
+
+img{
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.form {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+form input{
+    width:528px;
+    height: 35px;
+    color: #9F9F9F;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #E51E53;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pay-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.pay-options button{
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    justify-content: start;
+}
+
+.form-section{
+    justify-content: center;
+    align-items: center;
+}
+
+.terms-condition{
+    margin-top: 30px;
+}
+
+.terms-condition span{
+    font-weight: 700;
+    /* text-decoration: underline; */
+}
+
+.terms-condition a{
+    font-weight: 700;
+}

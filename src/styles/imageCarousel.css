@@ -3,42 +3,41 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2px;
+  margin: 0, 200px;
 }
 
 .main-container{
   display: flex;
   flex-direction: row;
+  margin: 0, 200px;
   
 }
   .card {
-    
     position: relative;
     width: 400px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: 50px;
+    margin: 30px 20px;
   }
   
-  .image-wrapper {
+  .image-wrapper-hero {
     width: 100%;
-    height: 200px;
+    height: 400px;
     position: relative;
     overflow: hidden;
-  }
-  
-  .image-wrapper img {
-    width: 100%;
-    height: 100%;
+    object-position: center;
+    }
+
+    .image-wrapper-hero img {
+      width: 100%;
+      height: 400px;  
+      object-fit: cover;  
+      object-position: center; 
+      position: relative;
+    }
     
-    object-fit: cover;
-    position: relative;
-  }
-  
-  /* .image-wrapper img.active {
-    display: block;
-  } */
   
   .prev-btn, .next-btn {
     position: absolute;
@@ -79,7 +78,7 @@
   
   .card-details {
     padding: 15px;
-    text-align: center;
+    
   }
   
   .card-details h3 {
@@ -95,5 +94,6 @@
   .status {
     color: red;
     font-weight: bold;
+    margin-top: 15px;
   }
   

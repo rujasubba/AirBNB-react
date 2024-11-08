@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./header";
 import Footer from "./footer";
-import AppContextProvider from "../context";
+import AppContextProvider from "../context/index";
 
 function Layout ({children}) {
     return(

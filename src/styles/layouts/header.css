@@ -1,31 +1,29 @@
 .all-header{
-    margin: 0 50px;
+    margin: 0 200px;
+    border-bottom: 1px solid #ccc;
+    
 }
 
 
 .main-header{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items: center;
-    z-index: 100;
+    /* z-index: 100; */
    width: 100%; 
 
 }
 
-/* .main-header :nth-child(2) {
-   flex:2;
-  } */
 
 .logo img{
-    height: 150px;
-    width: 150px;
+    height: 80px;
+    width: 80px;
 
 }
 
 .header-centre{
     display: flex;
     flex: 1;
-    height: 50px;
     justify-content: center;
     align-items: center;
     width: 400px;
@@ -34,8 +32,8 @@
 }
 
 .tablinks{
-    font-size:400;
-    font-size: 25px;
+    font-size:300;
+    font-size: 15px;
     border: none;
     background: transparent;
     cursor: pointer;
@@ -46,7 +44,7 @@
     font-size: larger;  
 }
 .header-centre h3{
-    font-weight: 400;
+    font-weight: 200;
 }
 
 #hfade{
@@ -58,8 +56,7 @@
     width:350px;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
-    margin-right: 80px;
+    font-size: 15px;
     padding: 0 4px;
 
 }
@@ -75,16 +72,16 @@
 .sub-header{
     display: flex;
     flex-direction: row;
-    height: 50px;
+    height: 30px;
     justify-content: space-between;
     align-items: center;
-    border: 1px;
+    border: 0.5px solid #ccc;
     box-shadow: 2px 2px 2px 2px whitesmoke;
     border-radius: 50px;
     max-width: 70%;
-    margin: 15px 200px 35px 300px;
+    margin: 5px 200px 20px 300px;
     padding: 20px;
-    font-size: 20px;
+    font-size: 15px;
 }
 .h-sections{
  padding:0;
@@ -124,9 +121,9 @@
 
 
 .search{
-    padding-top: 20px;
-    width:70px;
-    height:50px;
+    padding-top: 8px;
+    width:35px;
+    height:25px;
     justify-content: center;
     align-items: center;
     text-align: center;

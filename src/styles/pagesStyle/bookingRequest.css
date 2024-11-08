@@ -1,0 +1,245 @@
+
+  .booking-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 300px;
+  }
+  
+  .request-to-book {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+  }
+  
+  /* .left-column, .right-column {
+    width: 48%;
+  } */
+  
+  .booking-page-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .price-alert{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .price-alert span{
+    font-weight: 800;
+  }
+  .price-alert img{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 40px;
+    right: 10px;
+    margin-left: 10px;
+   
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  h2, h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+  
+  .trip-details .detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .detail-row a.edit-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-section {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    
+  }
+
+  .login-p p{
+    font-size: 14px;
+    color:#757575;
+  }
+  .login-p span{
+    font-weight: 800;
+    text-decoration: underline;
+  }
+  
+  .login-section select, .login-section input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+  }
+  .login-section select{
+    border-bottom: 1px solid #ccc;
+    
+  }
+  .login-section input{
+    width: 80%;
+  }
+  .continue-btn {
+    background-color: #E51E53;
+    color: white;
+    padding: 12px 24px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
+  .back-request{
+    display: flex;
+  }
+
+  .go-back{
+    background: none;
+    border:none
+  }
+  .login-options{
+    padding: 10px;
+    width: 100%;
+  }
+  
+
+  .socialMedia{
+    display: flex;
+   justify-content: space-between;
+   background: none;
+   margin-bottom: 20px;
+  
+  }
+  .socialMedia button{
+    background: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 110px;
+    padding: 5px;
+  }
+  .socialMedia img{
+    height: 20px;
+    width: 20px;
+  }
+
+  .gmail-login button{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+  }
+  .gmail-login button:hover{
+    background-color: #ccc;
+  }
+  #mail-icon{
+    margin-right: 50px;
+    padding: 5px;
+  }
+  .right-carddetails{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-top: 88px;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  }
+
+  .iland-img-container{
+    display: flex;
+    gap: 20px;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .iland-img-container img{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .price-details {
+    padding: 20px;
+  }
+
+  .reviews {
+    font-size: 14px;
+    color: #757575;
+    display: flex;
+  }
+  .reviews span img{
+    height:15px;
+    width: 15px;
+    margin-right: 5px;
+  }
+  
+  .price-summary .price-row, .total {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+   
+  }
+ .total{
+  border-top: 1px solid #ccc;
+
+ }
+  .total strong {
+    font-size: 16px;
+   
+  }
+
+  .line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.or-text {
+    padding: 0 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+
+
+  

@@ -2,18 +2,15 @@ import React, { useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 
-import ImageGridModal from './imageGridModal';
-import ImageGridPage from '../../pages/imageGridPage';
-import Gallery from './index';
-
-import '../../styles/imageCarousel.css';
-
-import IosShareIcon from '@mui/icons-material/IosShare';
 
 
-const ImageCarousel = ({ images, title, host, status, place, guests, bedroom, bath, bed, star, reviews, photo, profession,
-  born, work, hobby, school,pets
- }) => {
+import '../../styles/islandCarousel.css';
+
+import FavoriteBorderTwoToneIcon from '@mui/icons-material/FavoriteBorderTwoTone';
+
+
+const IslandCarousel = ({ images, title, host, status, place, guests, bedroom, bath, bed, star, reviews, photo, profession, 
+  area, date, price, bedphoto }) => {
     console.log(images);
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -47,17 +44,16 @@ const ImageCarousel = ({ images, title, host, status, place, guests, bedroom, ba
 
     const handelCardClick = (e) =>{
       
-      navigate('/displayimages', {state:{images, title, host, status, place, guests, bedroom, bath, bed, star, reviews, photo, profession,
-      born, work, hobby, school, pets
-      }});
+      navigate('/island/${id}', {state:{images, title, host, status, place, guests, bedroom, bath, bed, star, reviews, photo, profession, area, date, price, bedphoto}});
       e.stopPropagation();
     };
 
   return (
-    <div className="main-container">
+   <React.Fragment>
+       <div className="main-container">
          <div className="card" onClick={handelCardClick}>
              <button className="prev-btn" onClick={prevImage}>⟨</button>
-             <div className="image-wrapper-hero">
+             <div className="image-wrapper-island">
                  <img
                      src={images[currentIndex]} // Only render the current image
                      alt={`Carousel ${currentIndex + 1}`}
@@ -65,18 +61,29 @@ const ImageCarousel = ({ images, title, host, status, place, guests, bedroom, ba
                   />
                 
               </div>
-           <button className="next-btn" onClick={nextImage}>⟩</button>
-           <span id='card-share'><IosShareIcon /></span>
-           <div className="card-details">
-             <h3>{title}</h3>
-             <p>Hosted by {host}</p>
-             <span className="status">{status}</span>
-            </div>                  
+             <button className="next-btn" onClick={nextImage}>⟩</button>
+             <div className='like-fav'>
+                 <span id='fav'>Guest favourite</span>
+                 <span id='card-like'><FavoriteBorderTwoToneIcon /></span>
+             </div>
+             
+                           
           </div>
 
+          
          
+        </div>
+
+     <div className="card-details">
+        <h3>{place}</h3>
+       <p>{area}</p>
+       <p>{date}</p>
+       <h3>AUD ${price} total</h3>
+
     </div>
+  </React.Fragment>
+       
   );
 };
 
-export default ImageCarousel;
+export default IslandCarousel;

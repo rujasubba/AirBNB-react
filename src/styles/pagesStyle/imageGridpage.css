@@ -44,20 +44,22 @@
     background-color: white;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
    
     border: 1px solid black;
     border-radius: 10px;
     font-size: 20px;
     position: absolute;
-    bottom: 30%;
-    right: 5%;
+    bottom: 4%;
+    right: 2%;
   }
 
   .property-info{
-    display: block;
+    display: grid;
     margin-top: 100px;
+    padding-bottom: 30px;
     line-height: 15px;
+    border-bottom: 1px solid #ccc;
   }
 
   .property-info h2{
@@ -91,10 +93,25 @@
   text-decoration: underline;
  }
   
+ .host-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+ }
+
+ .photo-id img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+ } 
+ .host-addons{
+  line-height: 4px;
+ }
 
   .lower-section{
     width: 70%;
-    margin-top: 5px;
+    margin-top: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -102,10 +119,10 @@
 
   .availability{
     border: 1px;
-    box-shadow: 2px 2px 2px 2px whitesmoke;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.1);
     align-items: center;
     border-radius: 20px;
-    padding: 100px;
+    padding: 70px 120px;
   }
 
   .availability h3{
@@ -116,7 +133,7 @@
 
   .availability button {
     background-color:#B0B0B0;
-    width: 200px;
+    width: 250px;
     height: 50px;
     border: 1px solid #B0B0B0;
     border-radius: 10px;
@@ -126,3 +143,98 @@
     text-align: center;
 
   }
+
+  .knowYourHost{
+    display: grid;
+
+  }
+
+  .host-card{
+    display: flex;
+    width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    padding: 30px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+
+  }
+  .host-left{
+    justify-content: center;
+    align-items: center;
+    line-height: 5px;
+    font-size: 25px;
+    font-weight: 800;
+    
+  }
+
+  .img-container{
+    position: relative;
+    height: 150px;
+    width: 150px;
+  }
+
+  #idphoto{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  .img-container span{
+    position: absolute;
+    left: 120px;
+    bottom: 20px;
+    height: 30px;
+    width:30px;
+  }
+
+  #iconphoto{
+    position: absolute;
+    height: 30px;
+    width:30px;
+    /* top:105px; 
+    right: 90px; */
+  }
+
+
+  .host-right{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    line-height: 1px;
+  }
+  .host-right h3{
+    font-size: 25px;
+    font-weight: 800;
+  }
+
+  .hr-sections{
+    border-bottom: 1px solid #ccc;
+    padding: 0 4px;
+  }
+
+ .property-details{
+  margin-top: 50px;
+  align-items: center;
+ } 
+
+ .u-sections{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 35px;
+  
+
+ }
+ .shortinfo-right{
+  line-height: 8px;
+  margin-top: 10px 0px;
+ }
+ .shortinfo-host p {
+  line-height: 5px;
+  margin-top: 10px 0px;
+ font-size: 40px;
+ }
